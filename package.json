@@ -1,0 +1,25 @@
+{
+  "name": "RenScripts",
+  "version": "1.0.0",
+  "description": "A visual normal maker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Amekiri",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^19.0.9"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8"
+  }
+}
