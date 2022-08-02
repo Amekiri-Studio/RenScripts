@@ -12,6 +12,8 @@ body{
     width: 100vw;
 }
 .button {
-
+    position: absolute;
+    border: none;
+    color: #efefef;
 }
 /* Add styles here to customize the appearance of your app */

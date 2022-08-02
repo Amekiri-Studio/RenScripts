@@ -17,6 +17,7 @@ function createWindow () {
   require('./main/menu')
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
+  mainWindow.setAspectRatio(16 / 9)
   console.log("Window loaded")
 
   // Open the DevTools.
