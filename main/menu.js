@@ -10,7 +10,7 @@ var menuTemplate = [
             },
             {
                 label: "Load",
-                accelerator:'ctrl+l'
+                accelerator:'ctrl+o'
             },
             {
                 type: "separator"
@@ -22,6 +22,60 @@ var menuTemplate = [
             {
                 label: "Quick Load",
                 accelerator:'f3'
+            }
+        ]
+    },
+    {
+        label: "Operate",
+        submenu: [
+            {
+                label: "Back",
+                accelerator: "ctrl+b"
+            },
+            {
+                label: "Log",
+                accelerator: "ctrl+l"
+            },
+            {
+                type: 'separator'
+            },
+            {
+                label: 'Skip',
+                type: 'checkbox',
+            },
+            {
+                label: 'Auto',
+                type: 'checkbox',
+            }
+        ]
+    },
+    {
+        label: "System",
+        submenu: [
+            {
+                label: "Setting"
+            }
+        ]
+    },
+    {
+        label: "Help",
+        submenu: [
+            {
+                label: "Help",
+                accelerator: "shift+h"
+            },
+            {
+                label: "About",
+                accelerator: "shift+a"
+            },
+            {
+                type: "separator"
+            },
+            {
+                label: "About RenScripts"
+            },
+            {
+                label: "About Electron"
             }
         ]
     }
