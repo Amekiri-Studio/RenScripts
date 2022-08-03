@@ -8,6 +8,3 @@ var fs = require("fs")
 $("#start_button").click(() => {
     alert("hello")
 });
-$("").click(() => {
-
-})

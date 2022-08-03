@@ -1,5 +1,5 @@
 const {Menu,BrowserWindow} = require('electron')
-
+const {menu_about,menu_aboutRenScripts} = require("./menu/event")
 var menuTemplate = [
     {
         label: "File",
@@ -53,7 +53,7 @@ var menuTemplate = [
         label: "System",
         submenu: [
             {
-                label: "Setting",
+                label: "Configurate...",
             }
         ]
     },
@@ -66,13 +66,15 @@ var menuTemplate = [
             },
             {
                 label: "About",
-                accelerator: "shift+a"
+                accelerator: "shift+a",
+                click:menu_about
             },
             {
                 type: "separator"
             },
             {
-                label: "About RenScripts"
+                label: "About RenScripts",
+                click:menu_aboutRenScripts
             },
             {
                 label: "About Electron"
