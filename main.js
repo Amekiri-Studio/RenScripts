@@ -19,6 +19,7 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
   mainWindow.setAspectRatio(16 / 9)
+  // mainWindow.toggleDevTools()
   console.log("Window ratio: 16 / 9")
   console.log("Window loaded")
 

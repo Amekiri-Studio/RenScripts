@@ -4,4 +4,10 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
-window_flag = 1;
+var fs = require("fs")
+$("#start_button").click(() => {
+    alert("hello")
+});
+$("").click(() => {
+
+})
