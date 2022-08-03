@@ -5,6 +5,9 @@
 // selectively enable features needed in the rendering
 // process.
 var fs = require("fs")
-$("#start_button").click(() => {
-    alert("hello")
-});
+const {startButtonClick,loadButtonClick,settingButtonClick,helpButtonClick,exitButtonClick} = require("./renderer/index")
+$("#start_button").click(startButtonClick)
+$("#load_button").click(loadButtonClick)
+$("#setting_button").click(settingButtonClick)
+$("#help_button").click(helpButtonClick)
+$("#exit_button").click(exitButtonClick)
