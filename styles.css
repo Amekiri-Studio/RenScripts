@@ -15,5 +15,10 @@ body{
     position: absolute;
     border: none;
     color: #efefef;
+    font-size: 5vh;
+    background-color: transparent;
+}
+.button:hover {
+    color: aqua;
 }
 /* Add styles here to customize the appearance of your app */
