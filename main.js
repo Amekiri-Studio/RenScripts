@@ -1,7 +1,12 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+const {dialog, ipcMain} = require("electron");
 var mainWindow;
+
+// function handleMessageDialog(option,callback) {
+//   dialog.showMessageBox(null,option).then(callback)
+// }
 
 function createWindow () {
   // Create the browser window.
@@ -10,7 +15,7 @@ function createWindow () {
     height: 720,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration:true,
+      nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true
     }
@@ -33,7 +38,7 @@ function createWindow () {
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
   createWindow()
-
+  // ipcMain.on("message-dialog",handleMessageDialog)
   app.on('activate', function () {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.

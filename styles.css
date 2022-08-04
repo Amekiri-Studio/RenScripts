@@ -27,7 +27,7 @@ body{
 }
 .left_content>li {
     list-style: none;
-    margin: 8%;
+    margin: 8% 20%;
 }
 .left_content_head {
     height: 25%;
