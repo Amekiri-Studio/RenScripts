@@ -5,7 +5,10 @@
 // selectively enable features needed in the rendering
 // process.
 var fs = require("fs")
-const {startButtonClick,loadButtonClick,settingButtonClick,helpButtonClick,exitButtonClick} = require("./renderer/index")
+const url = window.location.href
+if (url.endsWith("index.html")) {
+    init()
+}
 $("#start_button").click(startButtonClick)
 $("#load_button").click(loadButtonClick)
 $("#setting_button").click(settingButtonClick)
