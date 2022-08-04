@@ -6,9 +6,10 @@
 // process.
 var fs = require("fs")
 const url = window.location.href
-if (url.endsWith("index.html")) {
+$().ready(() => {
     init()
-}
+})
+
 $("#start_button").click(startButtonClick)
 $("#load_button").click(loadButtonClick)
 $("#setting_button").click(settingButtonClick)
