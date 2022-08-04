@@ -53,7 +53,7 @@ var menuTemplate = [
         label: "System",
         submenu: [
             {
-                label: "Configurate...",
+                label: "Setting...",
             }
         ]
     },
