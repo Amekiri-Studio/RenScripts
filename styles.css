@@ -35,4 +35,22 @@ body{
 .button1:hover {
     color: aqua;
 }
+.notice_box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2vh solid #adcaae;
+    background-color: rgba(0,0,0,0.3);
+    width: 30%;
+}
+.notice_box>h1{
+    color: #efefef;
+    margin: 10% 0;
+    font-size: 8vh;
+}
+.notice_box>button {
+    margin: 5% 10%;
+}
 /* Add styles here to customize the appearance of your app */

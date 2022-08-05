@@ -29,8 +29,6 @@ function exitButtonClick(e) {
     // },r => {
     //
     // })
-    $(".background").animate({opacity: '0'},1000)
-    setTimeout(() => {
-        window.close()
-    },1000)
+    $(".background").prepend(boxContent)
+    setExitBoxButtonEvent()
 }
