@@ -29,6 +29,5 @@ function exitButtonClick(e) {
     // },r => {
     //
     // })
-    $(".background").prepend(boxContent)
-    setExitBoxButtonEvent()
+    exitButtonYes()
 }

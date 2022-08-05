@@ -5,7 +5,6 @@
 // selectively enable features needed in the rendering
 // process.
 // var fs = require("fs")
-const url = window.location.href
 const boxContent = '<div class="notice_box">' +
     '      <h1>' +
     '        Exit game?' +
@@ -18,11 +17,27 @@ $().ready(() => {
     init()
 })
 
+// window.onbeforeunload = (e) => {
+//     loadExitNoticeBox()
+//     e.returnValue = false
+//     $("#button_exit_yes").click(() => e.returnValue = true)
+// }
+
+// window.addEventListener("close",e => {
+//     e.preventDefault()
+//     loadExitNoticeBox()
+// })
+
 $("#start_button").click(startButtonClick)
 $("#load_button").click(loadButtonClick)
 $("#setting_button").click(settingButtonClick)
 $("#help_button").click(helpButtonClick)
 $("#exit_button").click(exitButtonClick)
+
+function loadExitNoticeBox() {
+    $(".background").prepend(boxContent)
+    setExitBoxButtonEvent()
+}
 
 function setExitBoxButtonEvent() {
     $("#button_exit_yes").click(exitButtonYes)
