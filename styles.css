@@ -32,6 +32,12 @@ body{
 .left_content_head {
     height: 25%;
 }
+.right_content {
+    background-color: rgba(0,0,0,0.3);
+    right: 0;
+    height: 100%;
+    width: 20%;
+}
 .button1:hover {
     color: aqua;
 }
