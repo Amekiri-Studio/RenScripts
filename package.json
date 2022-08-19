@@ -17,7 +17,7 @@
   "author": "Amekiri",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^19.0.9"
+    "electron": "^20.0.3"
   },
   "dependencies": {
     "@electron/remote": "^2.0.8"
